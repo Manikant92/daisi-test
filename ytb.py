@@ -47,7 +47,7 @@ def main(video_id):
             }
             # json.dumps(results) #, status_code=200, mimetype="application/json")
             #
-            return json.dumps(results)
+            return results # json.dumps(results)
         except Exception as e:
             print(str(e))
             return "No subtitles"
