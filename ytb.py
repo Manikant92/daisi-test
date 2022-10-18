@@ -20,7 +20,7 @@ def main(video_id):
     #         pass
     #     else:
     #         video_id = req_body.get('video_id')
-    req_body = json.loads(video_id)
+    req_body =  video_id.get_json() # json.loads(video_id)
     video_id = req_body.get('video_id')
 
     if video_id:
